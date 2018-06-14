@@ -1,6 +1,6 @@
 <template>
  <div>
- <div class="container-fluid">
+
 
    <div class="container-fluid" style="padding: 0px;">
   <div class="site-hero">
@@ -23,8 +23,8 @@
    <div class="row">
     
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"  v-for="service in services" :sr="service" :key="service.id">    
-        <div class="card">
-            <img class="card-img-top img-fluid" :src="baseUrl + service.image" alt="" style="height:200px;" >
+        <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
+            <img class="card-img-top img-fluid" :src="baseUrl + service.image" alt="" style="height:200px; " >
             <div class="card-body">
              <br> 
                 <h4 class="card-title" style="font-weight:bold;">{{ service.title }}</h4>
@@ -37,13 +37,13 @@
         </div>
         </div>
     </div>
-</div>
+
 </template>
 
 <script>
  
  import axios from 'axios';
-    let baseUrl = "http://localhost:8000/";
+    let baseUrl = "http://pell-technologies.com/";
     export default {
         
         data() {
@@ -54,7 +54,7 @@
         },
         methods: {
                 onGetQuotes() {
-		                axios.get('http://localhost:8000/api/quotes')
+		                axios.get('http://pell-technologies.com/api/quotes')
 		                        .then(
 		                                response => {
 		                    this.services = response.data.quotes;

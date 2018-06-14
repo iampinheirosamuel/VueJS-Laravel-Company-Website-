@@ -40,6 +40,8 @@
                 
                     <p class="card-text" style="font-size:14px;">It comes equipped it with all features</p>
                     <hr>
+                    
+                    <a href="/#/contact" class="btn btn-large btn-secondary">Buy</a>
                 </div>
             </div>
           </div>
@@ -53,6 +55,8 @@
                 
                     <p class="card-text" style="font-size:14px;">It comes equipped it with all features</p>
                     <hr>
+                    
+                    <a href="/#/contact" class="btn btn-large btn-secondary">Buy</a>
                 </div>
             </div>
           </div>
@@ -66,6 +70,7 @@
                 
                     <p class="card-text" style="font-size:14px;">It comes equipped it with all features</p>
                     <hr>
+                    <a href="/#/contact" class="btn btn-large btn-secondary">Buy</a>
                 </div>
             </div>
           </div>

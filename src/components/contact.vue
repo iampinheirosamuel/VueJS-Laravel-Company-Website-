@@ -31,7 +31,7 @@
      
         <div class="row">
         
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">    
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">    
             <div class="card">
                 <img class="card-img-top img-fluid" src="src/assets/images/azure.jpg" alt="" style="height:200px;" >
                 <div class="card-body">
@@ -40,9 +40,13 @@
                 
                     <p class="card-text" style="font-size:14px;">Phone: 09011223344</p>
                     <hr>
-                    <p class="card-text" style="font-size:14px;">AAddress: 09011223344</p>
+                    <p class="card-text" style="font-size:14px;">Address: Lagos, Nigeria.</p>
                 </div>
             </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">  
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=lagos%20island&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div></div>
           </div>
 
 
@@ -57,3 +61,5 @@
  </div>
 </div>
 </template>
+
+<style  type="text/babel">.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>

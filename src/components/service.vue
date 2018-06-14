@@ -20,19 +20,20 @@
 <br><br>
         <div class="container-fluid">
         <div class="row">
-        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">    
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">    
             <div class=" " style="padding:30px;">
-                <img class="card-img-top img-responsive" :src="baseUrl + service.image" alt="" style="height:200px;" >
+                <img class="card-img-top img-responsive" :src="baseUrl + service.image" alt="" style="" >
             </div>
         </div> 
 
-            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-offset-2 col-md-6 col-sm-6 col-xs-12">
              <br> 
                 <h4 class="card-title" style="font-weight:bold;">{{ service.title }}</h4>
                
                 <p class="card-text" style="font-size:14px;">{{ service.content }}</p>
                 <hr>
                 <p class="card-text"><small class="text-muted"></small></p>
+                <a href="/#/contact" class="btn btn-large btn-secondary">Get Started</a>
             </div>
            
         </div>
@@ -44,7 +45,7 @@
 
 <script>
  import axios from 'axios';
-    let baseUrl = "http://localhost:8000/";
+    let baseUrl = "http://pell-technologies.com/";
     export default {
         
         data() {
@@ -57,7 +58,7 @@
         methods: {
           
            onGetQuote(id) {
-		                axios.get('http://localhost:8000/api/quotes/'+ id +'')
+		                axios.get('http://pell-technologies.com/api/quotes/'+ id +'')
 		                        .then(
 		                                response => {
 		                    this.service = response.data.quote;

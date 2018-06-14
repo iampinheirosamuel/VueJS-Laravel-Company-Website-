@@ -73,7 +73,7 @@
             },
            
             onSubmitted() {
-                axios.post('http://localhost:8000/api/quote',
+                axios.post('http://pell-technologies.com/api/quote',
                         {
                           content: this.quoteContent,
                           title: this.title,
